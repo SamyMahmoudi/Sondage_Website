@@ -13,23 +13,9 @@
 </head>
 
 <body>
-    <section>
-        <header class="container">
-            <article class="container">
-                <a href="index.html" title="logo SondageAsk"><img src="assets/images/logo.png"
-                        alt="logo Sondage Ask"></a>
-            </article>
-            <span class="spanMenu openMenu" onclick="openNav()">&#9776;</span>
-            <nav id="myNav">
-                <span class="spanMenu closeMenu" onclick="closeNav()">&#9932;</span>
-                <ul class="container menu">
-                    <li><a href="index.html" title="accueil">Accueil</a></li>
-                    <li><a href="connexion.html" title="connexion">Connexion</a></li>
-                    <li><a href="inscription.html" title="inscription">Inscription</a></li>
-                </ul>
-            </nav>
-        </header>
-    </section>
+
+    <?php include('inc/HeaderPublic.php'); ?>
+    
     <main>
         <section class="landing">
             <article class="image-fond-header">
@@ -94,52 +80,9 @@
                 fonctionnalités</a>
         </article>
     </main>
-    <footer class="footer-page">
-        <article>
-            <nav class="containerFooter">
-                <section class="nav-systeme">
-                    <div>
-                        <ul>
-                            <li>
-                                <a href="#" title="Découvrir">Découvrir</a>
-                            </li>
-                            <li>
-                                <a href="#" title="F.A.Q">F.A.Q</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul>
-                            <li>
-                                <a href="#" title="Mentions Légales">Mentions légales</a>
-                            </li>
-                            <li>
-                                <a href="#" title="Politique de confidentialité">Politique de confidentialité</a>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-                <div>
-                    <ul class="rs">
-                        <li>
-                            <a href="#" title="Facebook">
-                                <img src="./assets/images/Facebook.png" alt="Facebook">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="Twitter">
-                                <img src="./assets/images/Twitter.png" alt="Twitter">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="conclusion-footer">
-                <hr>
-                <p>Betscape - 2020 - Site réalisé dans le cadre d'un projet scolaire.</p>
-            </div>
-        </article>
-    </footer>
+
+    <?php include('inc/FooterPublic.php'); ?>
+
     <script src="js/burger.js"></script>
 </body>
 

@@ -10,33 +10,13 @@
 </head>
 
 <body>
-    <section>
-        <header class="container">
-            <article class="container">
-                <a href="index.html" title="logo SondageAsk"><img src="assets/images/logo.png"
-                        alt="logo Sondage Ask"></a>
-            </article>
-            <section class="container responsiveMenu">
-                <a href="monProfil.html" title="mon profil"> <img class="iconMenu" src="./assets/images/user-icon.png"
-                        alt="user icon"></a>
-                <span class="spanMenu openMenu" onclick="openNav()">&#9776;</span>
-            </section>
-            <nav id="myNav">
-                <span class="spanMenu closeMenu" onclick="closeNav()">&#9932;</span>
-                <ul class="container menu">
-                    <li><a href="actualites.html" title="actualités">Actualités</a></li>
-                    <li><a href="mySdg.html" title="mes sondages">Mes Sondages</a></li>
-                    <li><a href="amis.html" title="mes amis">Amis</a></li>
-                    <li><a href="monProfil.html" title="mon profil">Profil</a></li>
-                    <li><a href="#" title="se déconnecter">Déconnexion</a></li>
-                </ul>
-            </nav>
-        </header>
-    </section>
+
+    <?php include("inc/HeaderUser.php"); ?>
+    
     <main>
         <section>
             <article class="menu-mySdg">
-                <a href="createurSdg.html" title="créer un nouveau sondage"><span>&#8658;</span> Créer un sondage</a>
+                <a href="?page=createurSondage" title="créer un nouveau sondage"><span>&#8658;</span> Créer un sondage</a>
             </article>
         </section>
         <section class="containerSdg">
@@ -146,52 +126,9 @@
             </section>
         </section>
     </main>
-    <footer class="footer-page">
-        <article>
-            <nav class="containerFooter">
-                <section class="nav-systeme">
-                    <div>
-                        <ul>
-                            <li>
-                                <a href="#" title="Découvrir">Découvrir</a>
-                            </li>
-                            <li>
-                                <a href="#" title="F.A.Q">F.A.Q</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul>
-                            <li>
-                                <a href="#" title="Mentions Légales">Mentions légales</a>
-                            </li>
-                            <li>
-                                <a href="#" title="Politique de confidentialité">Politique de confidentialité</a>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-                <div>
-                    <ul class="rs">
-                        <li>
-                            <a href="#" title="Facebook">
-                                <img src="./assets/images/Facebook.png" alt="Facebook">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="Twitter">
-                                <img src="./assets/images/Twitter.png" alt="Twitter">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="conclusion-footer">
-                <hr>
-                <p>Betscape - 2020 - Site réalisé dans le cadre d'un projet scolaire.</p>
-            </div>
-        </article>
-    </footer>
+
+    <?php include("inc/FooterUser.php") ?>
+    
     <script src="js/burger.js"></script>
 </body>
 
