@@ -1,0 +1,64 @@
+header {
+    article {
+        h1 {
+            font-size: $fontSize36;
+        }
+    }
+}
+
+.menu {
+    li {
+        padding: 10px;
+        a {
+            color: $white;
+            font-size: $fontSize48;
+        }
+    }
+}
+
+// PAGES: SIGN UP SIGN IN 
+.containerFormulaire form 
+{
+   h2 
+   {
+        text-align: center;
+        color: $white;
+        padding-bottom: 30px;
+    }
+    p 
+    {
+        color: $grey;
+        font-size: 12px;
+        a 
+        {
+            color: $white;
+            font-size: 14px;
+            text-decoration: none;
+            &:hover {
+                border-bottom: 1px solid $white;
+            }
+        }
+    } 
+}
+// PAGES : Profil
+.donneesActuelles {
+    h1 {
+        padding: $pad15;
+        color: $white;
+        font-size: $fontSize36;
+    }
+    h2 {
+        padding: $pad10;
+        color: $white;
+        font-size: $fontSize24;
+    }
+}
+
+.section-modif {
+    .formChangeUser {
+        h3 {
+            padding: $pad15 0;
+            color: $white;
+        }
+    }
+}

@@ -1,0 +1,318 @@
+.landing {
+    background: $gradientPurple;
+}
+
+.image-fond-header {
+    background-image: url("../assets/images/header.png");
+    background-repeat: no-repeat;
+    background-position: 100% 70%;
+    background-size: 50%;
+}
+
+.colorButton {
+    padding: 8px 28px;
+    border-radius: 27.5px;
+    background-color: #bf3676;
+    color: white;
+    text-decoration: none;
+}
+
+.landingContainer {
+    align-items: center;
+    padding: 230px 0px 200px 180px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.presentation {
+    width: 50%;
+
+    h1 {
+        width: 80%;
+        font-size: 46px;
+        line-height: 1.4;
+        font-weight: 800;
+        color: white;
+    }
+
+    p {
+        width: 75%;
+        padding-top: 6px;
+        font-size: 16px;
+        line-height: 1.56;
+        color: white;
+        padding-bottom: 34px;
+    }
+}
+
+
+.containerJoueur {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.containerJoueur img {
+    position: absolute;
+    right: 0;
+}
+
+.containerJoueur div {
+    height: 720px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding-left: 115px;
+}
+
+.containerJoueur section {
+    padding-left: 20px;
+    width: calc(100% - 220px);
+    position: relative;
+}
+
+.containerJoueur div section p {
+    line-height: 1.2;
+    font-size: 24px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.joueurDescription {
+    font-size: 14px;
+    text-align: left;
+    color: #bbbbbb;
+}
+
+.containerJoueur div section .styleI {
+    font-size: 72px;
+    font-weight: 500;
+    color: black;
+    line-height: 0;
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+
+.containerJoueur div section img {
+    position: absolute;
+    top: -40px;
+    right: 0;
+}
+
+.fonctionnalites {
+    padding-top: 65px;
+    padding-bottom: 80px;
+    text-align: center;
+    background: $gradientPurple;
+}
+
+.fond-image-fct {
+    height: 100%;
+    width: 100%;
+    background-image: url("../assets/images/paris-personnalises.png");
+    background-repeat: no-repeat;
+    background-position: 50% 80%;
+}
+
+.fonctionnalites h2 {
+    font-size: 40.5px;
+    color: white;
+}
+
+.fonctionnalites hr {
+    margin: 28px auto 60px;
+    width: 248px;
+    height: 2px;
+    background-color: white;
+}
+
+.fonctionnalites section {
+    text-align: left;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    width: calc(100% - 360px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.presentation-fct {
+    position: relative;
+    width: 50%;
+}
+
+.presentation-fct h3 {
+    color: white;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.presentation-fct p {
+    padding-top: 30px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.56;
+    width: 80%;
+}
+
+.presentation-fct p span {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.listing-fct {
+    width: 50%;
+}
+
+.fct {
+    width: 100%;
+    display: flex;
+}
+
+.fct span {
+    font-size: 30px;
+    font-weight: bold;
+    color: #2f2359;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fct p {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.56;
+    color: #ffffff;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width:1200px) {
+
+    .image-fond-header {
+        background: none;
+    }
+
+    .landingContainer {
+        padding: 50px 70px 100px 70px;
+    }
+
+    .presentation {
+        width: 80%;
+    }
+
+    .presentation h1,
+    .presentation p {
+        width: 100%;
+    }
+
+    .presentation h1 {
+        font-size: 36px;
+    }
+
+    /* POSSIBILITES */
+    .possibilitesContainer {
+        width: 100%;
+        height: 100%;
+    }
+
+    .possibilitesContainer section {
+        margin: auto;
+        width: 80%;
+        height: 100%;
+        padding: 20px 0px;
+    }
+
+    .article-possibilites h2,
+    .sondage h2 {
+        padding: 0px 60px;
+        text-align: center;
+    }
+
+    .article-possibilites p {
+        display: block;
+        margin: auto;
+        padding: 15px 0px;
+        width: 80%;
+    }
+
+    .possibilitesContainer p {
+        margin: 0;
+    }
+
+    /* FONCTIONNALITES */
+    .presentation-fct {
+        margin: auto;
+        width: 100%;
+    }
+
+    .presentation-fct p {
+        margin-bottom: 60px;
+    }
+
+    .fonctionnalites section {
+        width: 80%;
+        padding-top: 40px;
+    }
+
+    .listing-fct {
+        width: 100%;
+    }
+
+    /*JOUEUR */
+    .containerJoueur img {
+        position: initial;
+        width: 100%;
+    }
+
+    .containerJoueur div section {
+        width: 100%;
+    }
+
+    .containerJoueur div {
+        display: flex;
+        align-items: center;
+        margin: auto;
+        padding-left: 0;
+        width: 80%;
+    }
+
+    .containerJoueur .quote {
+        position: absolute;
+        width: 100px;
+    }
+}
+
+@media (max-width:600px) {
+    .landingContainer {
+        padding: 100px 0px 100px 30px;
+    }
+
+    .colorButton {
+        padding: 0px 0px;
+        color: #ff0077;
+        background-color: initial;
+    }
+
+    .presentation-fct a {
+        right: initial;
+        top: initial;
+        left: 0px;
+    }
+}
+
+@media (max-width:340px) {
+    .fonctionnalites h2 {
+        font-size: 36px;
+    }
+}

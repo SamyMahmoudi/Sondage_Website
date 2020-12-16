@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amis</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <section>
+        <header class="container">
+            <article class="container">
+                <a href="index.html" title="logo SondaFriends"><img src="assets/images/logo.png" alt="logo SondaFriends"></a>
+            </article>
+            <section class="container responsiveMenu">
+                <a href="monProfil.html" title="mon profil"> <img class="iconMenu" src="./assets/images/user-icon.png" alt="user icon"></a>
+                <span class="spanMenu openMenu" onclick="openNav()">&#9776;</span>
+            </section>
+            <nav id="myNav">
+                <span class="spanMenu closeMenu" onclick="closeNav()">&#9932;</span>
+                <ul class="container menu">
+                    <li><a href="actualites.html" title="actualités">Actualités</a></li>
+                    <li><a href="mySdg.html" title="mes sondages">Mes Sondages</a></li>
+                    <li><a href="amis.html" title="mes amis">Amis</a></li>
+                    <li><a href="monProfil.html" title="mon profil">Profil</a></li>
+                    <li><a href="#" title="se déconnecter">Déconnexion</a></li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+    <main>
+        <section class="section-amis">
+            <article class="dash-amis">
+                <h1>Gérer mes amis</h1>
+                <a href="#" title="liste d'amis" onclick="listfriend()">Liste d'amis</a>
+                <a href="#" title="Ajouter un ami"  onclick="searchfriend()">Rechercher un ami</a>
+            </article>
+            <section class="amis-system">
+                <section>
+                    <article class="liste-amis" id="listfriend">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Nom d'utilisateur</th>
+                                    <th>Supprimer cet ami(e)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Vegeta</td>
+                                    <td><a href="#" title="supprimer cet ami(e)">Supprimer</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Goku</td>
+                                    <td><a href="#" title="supprimer cet ami(e)">Supprimer</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Luffy</td>
+                                    <td><a href="#" title="supprimer cet ami(e)">Supprimer</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </article>
+                    <article class="liste-amis" id="searchUser">
+                        <form method="POST" class="rechercherJoueur">
+                            <input type="search" name="search-user" id="" placeholder="rechercher un joueur">
+                            <button type="submit" name="valid-search-user">
+                                <img src="./assets/images/icon-search.png" alt="search-icon">
+                            </button>
+                        </form>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Nom d'utilisateur</th>
+                                    <th>Ajouter cet ami(e)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Naruto</td>
+                                    <td><a href="#" title="ajouter cet ami(e)">Ajouter</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Souris</td>
+                                    <td><a href="#" title="ajouter cet ami(e)">Ajouter</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Smile</td>
+                                    <td><a href="#" title="ajoutercet ami(e)">Ajouter</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </article>
+                </section>
+            </section>
+            <article class="amis-connect">
+                <h2>Amis connectés</h2>
+                <ul>
+                    <li>Sousa</li>
+                    <li>Contro</li>
+                    <li>Fletcher</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <footer class="footer-page">
+        <article>
+            <nav class="containerFooter">
+                <section class="nav-systeme">
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="#" title="Découvrir">Découvrir</a>
+                            </li>
+                            <li>
+                                <a href="#" title="F.A.Q">F.A.Q</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="#" title="Mentions Légales">Mentions légales</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Politique de confidentialité">Politique de confidentialité</a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <div>
+                    <ul class="rs">
+                        <li>
+                            <a href="#" title="Facebook">
+                                <img src="./assets/images/Facebook.png" alt="Facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Twitter">
+                                <img src="./assets/images/Twitter.png" alt="Twitter">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="conclusion-footer">
+                <hr>
+                <p>Betscape - 2020 - Site réalisé dans le cadre d'un projet scolaire.</p>
+            </div>
+        </article>
+    </footer>
+    <script src="js/burger.js"></script>
+    <script src="js/friend.js"></script>
+</body>
+</html>

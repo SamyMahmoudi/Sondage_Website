@@ -1,0 +1,55 @@
+.responsiveMenu {
+    align-items: flex-end;
+}
+#myNav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: $blackMedium;
+    transition: 0.3s;
+    
+    .menu {
+        height: 100%;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.spanMenu {
+    cursor: pointer;
+    font-size: $fontSize36;
+}
+.iconMenu {
+    width: 36px;
+    height: 36px;
+    margin-right: $marge20;
+    cursor: pointer;
+}
+
+.closeMenu {
+    padding-top: $pad15;
+    margin-right: $marge80;
+    position: absolute;
+    right: 0;
+    color: $white;
+}
+
+.openMenu {
+    margin-right: $marge80;
+}
+/***** RESPONSIVE *****/
+@media (max-width:768px) 
+{   
+    .closeMenu {
+        margin-right: $marge20;
+    }
+    .openMenu {
+        margin-right: $marge20;
+    }
+}

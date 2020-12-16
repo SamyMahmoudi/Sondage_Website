@@ -1,0 +1,14 @@
+.menu-mySdg {
+    width: 100%;
+    padding: $pad15;
+    text-align: center;
+    background-color: $blue;
+    a {
+        font-size: $fontSize24;
+        color: $white;
+        span {
+            font-size: $fontSize24 ;
+            color: $white;
+        }
+    }
+}

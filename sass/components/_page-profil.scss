@@ -1,0 +1,44 @@
+.section-profil {
+    background: $gradientPurple;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.containerProfil {
+    width: calc(100% - 160px);
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; 
+    background: $blackLight;
+}
+.donneesActuelles {
+    color: $white;
+    text-align: center;
+    width: 50%;
+   
+}
+
+.section-modif {
+    width: 50%;
+}
+
+/*RESPONSIVE*/
+@media (max-width:1024px)
+{
+    .containerProfil {
+        width: calc(100% - 20px);
+        flex-direction: column;
+    }
+
+    .formChangeUser {
+        display: flex;
+        flex-direction: column;
+        h3 {
+            width: 100%;
+        }
+    }
+}

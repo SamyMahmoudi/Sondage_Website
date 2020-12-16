@@ -1,0 +1,23 @@
+header {
+    background-color: $white;
+    height: 10vh;
+    justify-content: space-between;
+    article {
+        margin-left: $marge80;
+        a {
+            color:$black;
+        }
+        img {
+            width: 200px;
+        }
+    }
+}
+/***** RESPONSIVE *****/
+@media (max-width:768px) 
+{
+    header {
+        article {
+            margin-left: $marge20;
+        }
+    }
+}

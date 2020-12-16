@@ -1,0 +1,58 @@
+.main-signUpIn {
+    background: $gradientPurple;
+}
+
+.section-forms-signUpIn {
+    display: flex;
+    align-items: center;
+    min-height: 90vh;
+    background: url(../../assets/images/background.png);
+}
+
+.containerFormulaire {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerFormulaire form {
+    padding: 30px 60px;
+    width: 30%;
+    border: 2px solid white;
+    background-color: $blackLight;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+@media (max-width:1200px) {
+    .containerFormulaire {
+        height: 100%;
+        padding: 50px 0 70px 0;
+    }
+    .containerFormulaire form {
+        width: 400px;
+    }
+}
+
+@media (max-width:600px) {
+    .containerFormulaire {
+        padding: 30px 0 70px 0;
+    }
+    .containerFormulaire form {
+        width: 80%;
+        padding: 30px 40px;
+    }
+    .containerFormulaire form p {
+        text-align: center;
+    }
+}
+
+@media (max-width:340px) {
+    .containerFormulaire form {
+        padding: 30px 20px;
+    }
+}
