@@ -1,8 +1,7 @@
     <section>
         <header class="container">
             <article class="container">
-                <a href="index.html" title="logo SondageAsk"><img src="assets/images/logo.png"
-                        alt="logo Sondage Ask"></a>
+                <a href="?page=accueil" title="logo SondageAsk"><img src="assets/images/logo.png" alt="logo Sondage Ask"></a>
             </article>
             <span class="spanMenu openMenu" onclick="openNav()">&#9776;</span>
             <nav id="myNav">

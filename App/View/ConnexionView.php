@@ -14,10 +14,10 @@
     <main class="main-signUpIn">
         <section class="section-forms-signUpIn">
             <article class="containerFormulaire">
-                <form action="">
+                <form method="POST">
                     <h2>Connexion</h2>
-                    <input type="text" name="" id="" placeholder="identifiant">
-                    <input type="password" name="" id="" placeholder="mot de passe">
+                    <input type="email" name="connexionEmail" id="connexionEmail" placeholder="adresse email" require>
+                    <input type="password" name="connexionMdp" id="connexionMdp" placeholder="mot de passe" require>
                     <input type="submit" value="Se Connecter">
                     <p><a href="#">Politique de confidentialité</a></p>
                     <p>*Pas de compte ? Inscrivez-vous <a href="inscription.html">ICI</a> !</p>
