@@ -7,9 +7,8 @@ use App\Controller\ActualitesController;
 use App\Controller\AmisController;
 use App\Controller\MySdgController;
 use App\Controller\CreateurSdgController;
-
 use App\Controller\SondageController;
-use App\Controller\DisconnectController;
+use App\Controller\DeconnexionController;
 use App\Controller\AjaxController;
 
 if(array_key_exists("page",$_GET))
@@ -49,19 +48,18 @@ if(array_key_exists("page",$_GET))
             $controller = new CreateurSdgController();
             $controller->CreateurSdgRender();
             break;
-        // case 'sondage'  :
-        //     $controller = new SondageController();
-        //     $controller->render();
-        //     break;
-
-        // case 'disconnect':
-        //     $controller = new  DisconnectController();
-        //     $controller->render();  
-        //     break;
-        // case 'ajax':
-        //     $controller = new  AjaxController();
-        //     $controller->render();  
-        //     break;
+        case 'sondage'  :
+            $controller = new SondageController();
+            $controller->SondageRender();
+            break;
+        case 'deconnexion':
+            $controller = new  DeconnexionController();
+            $controller->DeconnexionRender();  
+            break;
+        case 'ajax':
+            $controller = new  AjaxController();
+            $controller->render();  
+            break;
         default:
             $controller = new  AccueilController();
             $controller->AccueilRender();

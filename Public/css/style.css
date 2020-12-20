@@ -124,7 +124,10 @@ header {
     margin-right: 20px; }
   .openMenu {
     margin-right: 20px; } }
-
+    @media (max-width: 350px){
+      .openMenu {
+        margin-right: 0px; } 
+    }
 /* FOOTER */
 .footer-page {
   background-image: url("../assets/images/background-footer.png"); }
@@ -728,9 +731,154 @@ header {
       background-color: #e2dcdc; }
     .rechercherJoueur button[type="submit"] img {
       width: 20px; }
+#fondSdg {
+  background: linear-gradient(90deg, #2f2359 50%, #4c3991 100%);
+}
+.titreDuSdg {
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+  color:#da3883;
+  font-size: 24px;
+}
+.spanTitreDuSdg {
+  color: white;
+}
+.partSdg {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contenuSdg {
+  /* background-color: white; */
+  width: 60%;
+}
+.interactionSdg {
+  width: 40%;
+}
+.linkEmailing {
+  color: #ec2984;
+  font-weight:bold;
+  text-decoration: none;
+  padding-top: 10px;
+}
+.endEmailing {
+  color: white;
+}
+#tchat, #tchat form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#tchat form input {
+  padding: 8px 12px;
+  margin: 10px 0px;
+  background-color: #ec2984;
+  color: white;
+  border: none;
+  border-radius: 12px;
+}
+#container-messages {
+  width: 450px;
+  background-color: white;
+  height: 300px;
+  margin: 10px auto;
+  padding: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  white-space:pre-line;
+}
+#tchat h2 {
+  text-align: center;
+  color: white;
+}
+#tchat textarea {
+  resize: none;
+  width: 250px;
+  height: 100px;
+}
+#container-messages li {
+  margin-bottom: 8px;
+}
+#container-messages li:nth-last-child(n) {
+  background-color: rgb(168, 168, 255);
+  border-radius: 15px;
+  color: black;
+  padding: 5px;
+}
 
-/* #searchUser {
-  display: none; } */
+#container-messages li:nth-last-child(2n) {
+  background-color: rgb(202, 202, 202);
+  border-radius: 15px;
+  color: black;
+}
+#numSondage,#numId {
+  visibility: hidden;
+  font-size: 1px;
+}
+.emailing {
+  padding: 5px 5px;
+  text-align: center;
+}
+.resultatSdg {
+  border: solid 2px #d7f24b;
+  width: 50%;
+  border-radius: 10px;
+  padding: 20px;
+  margin:50px auto;
+  background: rgba(0, 0, 0, 0.3) ;
+}
+.resultatSdg h2 {
+  color: white;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.resultatSdg li {
+  color: white;
+  font-size: 22px;
+  padding: 10px 0px;
+}
+.reponseSdg{
+  background: rgba(0, 0, 0, 0.3);
+  width: 60%;
+  margin:40px auto;
+  padding: 20px;
+  border: solid 2px #d7f24b;
+  border-radius: 10px;
+}
+
+.reponseSdg li,.sdgEnCours h2 {
+  color: white;
+  font-size: 24px;
+  padding: 10px 0px;
+}
+
+.reponseSdg input[type="submit"]
+{
+  background-color: #da3883;
+  color: white;
+  cursor: pointer;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 10px;
+}
+.reponseSdg label,.reponseSdg input[type="radio"] {
+  cursor: pointer;
+}
+
+.sdgEnCours {
+  background: rgba(0, 0, 0, 0.3);
+  width: 60%;
+  margin:40px auto;
+  padding: 20px;
+  border: solid 2px #d7f24b;
+  border-radius: 10px;
+}
+
+.sdgEnCours p {
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
 
 /*RESPONSIVE*/
 @media (max-width: 1024px) {
@@ -742,3 +890,24 @@ header {
     width: 100%; }
   .amis-connect {
     width: 100%; } }
+
+@media (max-width:1200px)
+{
+  .contenuSdg {
+    width: 100%;
+  }
+  .interactionSdg {
+    width: 100%;
+  }
+}
+
+@media (max-width:600px)
+{
+  #container-messages {
+    width: 300px;
+  }
+  .reponseSdg,.sdgEnCours,.resultatSdg
+  {
+    width: 80%;
+  }
+}

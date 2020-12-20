@@ -14,7 +14,7 @@
                     <li><a href="?page=mesSondages" title="mes sondages">Mes Sondages</a></li>
                     <li><a href="?page=amis&a=listFriends" title="mes amis">Amis</a></li>
                     <li><a href="?page=profil" title="mon profil">Profil</a></li>
-                    <li><a href="#" title="se déconnecter">Déconnexion</a></li>
+                    <li><a href="?page=deconnexion" title="se déconnecter">Déconnexion</a></li>
                 </ul>
             </nav>
         </header>

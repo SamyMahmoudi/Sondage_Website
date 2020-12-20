@@ -44,7 +44,7 @@ class MonProfilModel extends Database
                 else 
                 {
                 $updateUserName = $this->pdo->prepare("UPDATE t_users SET user_name= ? WHERE user_id =".$_SESSION["userId"]);
-                $updateUserName->execute(array($_POST["new-user_name"]));
+                $updateUserName->execute(array(htmlspecialchars($_POST["new-user_name"])));
                 header("Location:?page=profil");
                 }
             }
@@ -72,7 +72,7 @@ class MonProfilModel extends Database
                     else 
                     {
                     $updateUserMail = $this->pdo->prepare("UPDATE t_users SET user_mail= ? WHERE user_id =".$_SESSION["userId"]);
-                    $updateUserMail->execute(array($_POST["new-user_mail"]));
+                    $updateUserMail->execute(array(htmlspecialchars($_POST["new-user_mail"])));
                     header("Location:?page=profil");
                     }
                 }
@@ -93,7 +93,7 @@ class MonProfilModel extends Database
                 {
                     $newpassword = password_hash($_POST["new-user_password"], PASSWORD_DEFAULT);
                     $updateUserPassword = $this->pdo->prepare("UPDATE t_users SET user_password= ? WHERE user_id =".$_SESSION["userId"]);
-                    $updateUserPassword->execute(array($newpassword));
+                    $updateUserPassword->execute(array(htmlspecialchars($newpassword)));
                     header("Location:?page=profil");
                 } 
                 else 

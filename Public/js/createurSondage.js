@@ -6,6 +6,6 @@ function ajout() {
             '<label for="reponse'+ i + '">Réponse ' + i + '</label> ' +
             '<input placeholder="Écrire une réponse" type="text" id="reponse'+ i + '" name="reponse' + i + '">' +
         '</div>';
-
+    
     i++;
 }
