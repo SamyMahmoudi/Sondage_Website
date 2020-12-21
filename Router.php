@@ -10,6 +10,8 @@ use App\Controller\CreateurSdgController;
 use App\Controller\SondageController;
 use App\Controller\DeconnexionController;
 use App\Controller\AjaxController;
+use App\Controller\ErreurController;
+use App\Controller\AutreProfilController;
 
 if(array_key_exists("page",$_GET))
 {
@@ -53,16 +55,20 @@ if(array_key_exists("page",$_GET))
             $controller->SondageRender();
             break;
         case 'deconnexion':
-            $controller = new  DeconnexionController();
+            $controller = new DeconnexionController();
             $controller->DeconnexionRender();  
             break;
         case 'ajax':
-            $controller = new  AjaxController();
+            $controller = new AjaxController();
             $controller->render();  
             break;
+        case 'autreProfil':
+            $controller = new AutreProfilController();
+            $controller->AutreProfilRender();
+            break;
         default:
-            $controller = new  AccueilController();
-            $controller->AccueilRender();
+            $controller = new ErreurController();
+            $controller->ErreurRender();
         endswitch;
 } 
 else 

@@ -103,4 +103,43 @@ class MonProfilModel extends Database
             }
         }
     }
+    public function updateProfilePicture()
+    {
+
+        if (isset($_POST['update-user_picture'])){
+            //paramétrages fichier récupérer
+            $file = $_FILES['new-user_picture'];
+            $fileName = $file["name"];
+            $fileTempName = $file["tmp_name"];
+            $fileError = $file["error"];
+
+            // récupérer l'extension du fichier téléchargé
+            $infosfichier = pathinfo($file["name"]);
+            $extension_upload = $infosfichier['extension'];
+            //tableaux avec les extensions des images autorisées
+            $autorisee = array("jpg", "jpeg", "png");
+            //si l'extension du fichier upload est bien dans le tableau des extensions autorisées 
+            if (in_array($extension_upload, $autorisee)){
+
+                //si il n'y a pas d'erreur
+                if ($fileError ===  0) {
+                    //nomme l'image un "nom unique" et son extension
+                    $imageFullName = uniqid("", true). "." . $extension_upload;
+                    //où sera upload l'image
+                    $fileDestination = "assets/profiles/" . $imageFullName;
+                    //Modifie les données avec UPDATE de la table, selon l'id correpondant
+                    $sql = $this->pdo->prepare('UPDATE t_users SET user_picture = ? WHERE user_id = ?');         
+                    $sql->execute(array($imageFullName,$_SESSION['userId']));
+                    //déplace le fichier de son emplacement temporaire vers le dossier final
+                    move_uploaded_file($fileTempName, $fileDestination);
+                    //arrive sur la page Galerie
+                    header("Location:?page=profil"); 
+                    
+                    } else 
+                        { 
+                            header("Location:?page=profil&echec-erreurUpload"); 
+                        }
+            } 
+        }
+    }
 }

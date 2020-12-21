@@ -12,6 +12,9 @@
 
         public function CreateurSdgRender()
         {
+            if ($_SESSION['connect'] == false) {
+                header("Location:?page=connexion");
+            }
             $this->model->CreationSondage();
             require ROOT."/App/View/CreateurSdgView.php";
         }

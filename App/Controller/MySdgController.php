@@ -12,6 +12,9 @@
 
         public function MySdgRender()
         {
+            if ($_SESSION['connect'] == false) {
+                header("Location:?page=connexion");
+            }
             $this->model->sdgFinish();
             $MySdg = $this->model->recupSondUser();
             

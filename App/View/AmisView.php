@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amis</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Open+Sans:wght@300&family=Roboto&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
 </head>
 <body>
@@ -38,7 +40,7 @@
                             {
                                 if($ami->user_id != $_SESSION['userId'])
                                 {
-                                    echo "<tr><td>". $ami->user_name."</td><td><a href='?page=amis&delete=".$ami->friendship_id."'>Supprimer l'ami(e)</a></td></tr>";
+                                    echo "<tr><td><a class='lprofil' href='?page=autreProfil&nb=".$ami->user_id."' title='voir profil'>". $ami->user_name."</a></td><td><a class='lred' href='?page=amis&delete=".$ami->friendship_id."'>Supprimer l'ami(e)</a></td></tr>";
                                 } 
                             }
 
@@ -89,7 +91,7 @@
                                             else 
                                             {
                                                 echo "<tr>
-                                                        <td>". $resultUser->user_name."</td>
+                                                        <td><a class='lprofil' href='?page=autreProfil&nb=".$resultUser->user_id."' title='voir profil'>". $resultUser->user_name."</a></td>
                                                         <td>Ami(e)</td>
                                                     </tr>";   
                                             }
@@ -97,8 +99,8 @@
                                         else
                                             {
                                                 echo "<tr>
-                                                        <td>". $resultUser->user_name."</td>
-                                                        <td><a href='?page=amis&ajouter=".$resultUser->user_id."'title='ajouter cet ami(e)'>Ajouter en ami</a></td>
+                                                        <td><a class='lprofil' href='?page=autreProfil&nb=".$resultUser->user_id."' title='voir profil'>". $resultUser->user_name."</a></td>
+                                                        <td><a class='lgreen' href='?page=amis&ajouter=".$resultUser->user_id."'title='ajouter cet ami(e)'>Ajouter en ami</a></td>
                                                     </tr>";
                                             }
                                     endforeach;

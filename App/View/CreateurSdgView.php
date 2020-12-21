@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Créer mon sondage</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Open+Sans:wght@300&family=Roboto&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
 </head>
 
@@ -41,11 +43,13 @@
                     <section>
                         <label for="temps">Durée du sondage</label>
                         <select name="temps">
-                            <option value="3">5 minutes</option>
+                            <option value="3">3 minutes</option>
+                            <option value="5">5 minutes</option>
                             <option value="15">15 minutes</option>
                             <option value="45">45 minutes</option>
                             <option value="60">60 minutes</option>
                             <option value="90">90 minutes</option>
+                            <option value="525600">une année</option>
                         </select>
                     </section>
                     

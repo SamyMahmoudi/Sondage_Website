@@ -7,7 +7,7 @@
 
         public function __construct()
         {
-        $this->model = new MonProfilModel();
+            $this->model = new MonProfilModel();
         }
 
         public function MonProfilRender()
@@ -21,6 +21,7 @@
             // recupere donnees actuelles de l'utilisateur
             $profil = $this->model->recupProfil();
             $this->model->updateUserData();
+            $this->model->updateProfilePicture();
             require ROOT."/App/View/MonProfilView.php";
         }
     }

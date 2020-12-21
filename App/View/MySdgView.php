@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mes Sondages</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Open+Sans:wght@300&family=Roboto&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
 </head>
 
@@ -19,7 +21,7 @@
             </article>
         </section>
         <section class="containerSdg">
-            <h2>Voci vos sondages en cours !</h2>
+            <h2>Voici vos sondages en cours !</h2>
             <section>
                 <?php 
                     foreach($MySdg as $sondage)

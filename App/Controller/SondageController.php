@@ -23,7 +23,12 @@ class SondageController {
      */
     public function SondageRender()
     {
-        $sondages = $this->model->recupSdg();
+        if ($_SESSION['connect'] == false) {
+            header("Location:?page=connexion");
+        }
+
+
+        $sondages = $this->model->recupSdg();    
         $reponses = $this->model->recupReponse();
 
         $amis = $this->model->emailing();

@@ -1,11 +1,12 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+ }
 
 a {
   text-decoration: none; }
-
 ul {
   list-style: none; }
 
@@ -625,6 +626,39 @@ header {
 .section-modif {
   width: 50%; }
 
+  .profil-pictures {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    padding: 10px;
+  }
+.formChangeUser input[type=file]
+{
+  color: white;
+}
+.sectionAutreProfil {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(90deg, #2f2359 50%, #4c3991 100%);
+}
+
+.sectionAutreProfil article {
+  text-align: center;
+  color: white;
+}
+
+.sectionAutreProfil article h1 {
+  margin: 20px 0px;
+  font-size: 32px;
+}
+.sectionAutreProfil article h2 {
+  margin-top: 20px;
+}
+.imgIns {
+  color: white;
+  font-size: 12px;
+}
 /*RESPONSIVE*/
 @media (max-width: 1024px) {
   .containerProfil {
@@ -701,7 +735,6 @@ header {
   display: flex; }
   .amis-system section {
     width: 100%; }
-
 .amis-connect {
   padding: 15px;
   width: 20%;
@@ -711,7 +744,15 @@ header {
   .amis-connect ul li {
     padding-top: 15px;
     color: white; }
-
+.lprofil {
+  color: blue;
+}
+.lred {
+  color: red;
+}
+.lgreen {
+  color: green;
+}
 .rechercherJoueur {
   display: flex;
   justify-content: center;
@@ -900,7 +941,10 @@ header {
     width: 100%;
   }
 }
-
+.errorGif {
+  margin: auto;
+    display: block;
+}
 @media (max-width:600px)
 {
   #container-messages {
@@ -909,5 +953,9 @@ header {
   .reponseSdg,.sdgEnCours,.resultatSdg
   {
     width: 80%;
+  }
+  .errorGif {
+    width: 250px;
+    height: 250px;
   }
 }

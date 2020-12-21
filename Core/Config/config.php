@@ -2,7 +2,7 @@
 
 $dbConfig = [
     "host" => "localhost:3306",
-    "dbname" => "SondaPote",
+    "dbname" => "sondafriends",
     "dbuser" => "root",
     "dbpass" => "",
 ];

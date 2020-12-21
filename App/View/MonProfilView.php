@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon profil</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Open+Sans:wght@300&family=Roboto&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
 </head>
 <body>
@@ -17,11 +19,21 @@
                 <section class="donneesActuelles">
                     <?php foreach($profil as $donneesProfil) :   ?>
                     <h1>PROFIL</h1>
+                    <img class="profil-pictures" src="assets/profiles/<?= $donneesProfil['user_picture'] ?>" alt="<?= $donneesProfil['user_picture'] ?>">
                     <h2><?= htmlspecialchars($donneesProfil['user_name']) ?></h2>
                     <h2><?= htmlspecialchars($donneesProfil['user_mail']) ?></h2>
                     <?php endforeach ?>
                 </section>
                 <section class="section-modif">
+                <article>
+                        <form class="formChangeUser" method="POST" enctype="multipart/form-data">
+                            <h3>Changer la photo de profil</h3>
+                            <p class="imgIns">taille maximum 2mo, fichier jpg jpeg png accetptés</p>
+                            <input type="file" name="new-user_picture">
+                            <input type="submit" name="update-user_picture" value="CONFIRMER">
+                            
+                        </form>
+                    </article>
                     <article>
                         <form class="formChangeUser" method="POST">
                             <h3>Changer de nom d'utilisateur</h3>

@@ -12,6 +12,9 @@
 
         public function ActualitesRender()
         {
+            if ($_SESSION['connect'] == false) {
+                header("Location:?page=connexion");
+            }
             $FriendsSdg = $this->model->recupSondFriends();
             require ROOT."/App/View/ActualitesView.php";
         }
