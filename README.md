@@ -1,6 +1,6 @@
 # Projet fil rouge 
 `Par Samy MAHMOUDI`
-Utilisation de SASS et gulp pour le style
+Utilisation de SASS et gulp pour le style et le design.
 
 # Ajouter la BDD
 Pensez à créer le fichier config.php dans `core/config`
@@ -16,7 +16,7 @@ $dbConfig = [
 
 Arrivée sur le site vous pouvez directement vous connecter grâce à vos identifiants :  
 ```
-email : Alexandre@iim.fr      
+email : alexandre@iim.fr      
 mot de passe : alexandre
 ```
  
@@ -25,6 +25,8 @@ mot de passe : alexandre
  email : samy@outlook.fr       
  mot de passe : samy
  ```
+ De plus, plusieurs sondages
+ 
 # Nouveautés & points d'améliorations
 * Le site est entièrement designé et totalement responsive.
 * Optimisation du SEO (title, alt, structure des pages, structure des titres, ...).
@@ -49,7 +51,7 @@ mot de passe : alexandre
 
 ### Page amis
 * ajout et suppression d'amis
-* vision des amis connectés et déconnectés (nous avons laissé nos comptes connectés volontairement)
+* vision des amis connectés (plusieurs comptes ont été laissés connectés volontairement)
 
 ### Mes sondages
 * Voir nos sondages en cours
