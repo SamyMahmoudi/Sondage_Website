@@ -25,7 +25,7 @@ mot de passe : alexandre
  email : samy@outlook.fr       
  mot de passe : samy
  ```
- De plus, plusieurs sondages
+ De plus, plusieurs sondages ont déjà été créées avec des messages dans les tchats pour avoir du contenu. 
  
 # Nouveautés & points d'améliorations
 * Le site est entièrement designé et totalement responsive.
