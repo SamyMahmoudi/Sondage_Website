@@ -52,6 +52,7 @@ mot de passe : alexandre
 ### Page amis
 * ajout et suppression d'amis
 * vision des amis connectés (plusieurs comptes ont été laissés connectés volontairement)
+* consulter les profils des différents utilisateurs
 
 ### Mes sondages
 * Voir nos sondages en cours
