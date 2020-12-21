@@ -1,6 +1,6 @@
 # Projet fil rouge 
 `Par Samy MAHMOUDI`
-Utilisation de SASS et gulp pour le style et le design.
+Utilisation de SASS et GULP pour le style et le design.
 
 # Ajouter la BDD
 Pensez à créer le fichier config.php dans `core/config`
