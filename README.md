@@ -46,7 +46,6 @@ mot de passe : alexandre
 
 ### Page profil
 * modification du profil
-* voir nos sondages en cours
 
 ### Page amis
 * ajout et suppression d'amis
