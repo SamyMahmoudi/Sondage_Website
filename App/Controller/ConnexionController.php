@@ -5,13 +5,10 @@
 
     class ConnexionController {
 
-        /**
-   * la fonction __construct éxécute ConnexionModel lorsque la class est instancié 
-   */
-    public function __construct()
-    {
-       $this->model = new ConnexionModel();
-    }
+        public function __construct()
+        {
+        $this->model = new ConnexionModel();
+        }
     
 
         public function ConnexionRender() 
