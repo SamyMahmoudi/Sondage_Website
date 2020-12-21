@@ -26,12 +26,12 @@ mot de passe : alexandre
  mot de passe : samy
  ```
 # Nouveautés & points d'améliorations
-Le site est entièrement designé et totalement responsive.
-Optimisation du SEO (title, alt, structure des pages, structure des titres, ...).
-Amélioration de la sécurité (page erreur 404,...).
-Amélioration de la vitesse du tchat.
-Voir les profils de tous les utilisateurs.
-Images de profil.
+* Le site est entièrement designé et totalement responsive.
+* Optimisation du SEO (title, alt, structure des pages, structure des titres, ...).
+* Amélioration de la sécurité (page erreur 404,...).
+* Amélioration de la vitesse du tchat.
+* Voir les profils de tous les utilisateurs.
+* Images de profil.
 
  
  
